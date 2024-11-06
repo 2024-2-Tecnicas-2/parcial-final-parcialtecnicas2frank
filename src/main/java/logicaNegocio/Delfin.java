@@ -1,5 +1,20 @@
 package logicaNegocio;
 
-public class Delfin {
-    // TODO: Aquí va tu código
+public class Delfin extends Animal{
+    
+    private final String TipoHabitat;
+
+    public Delfin() {
+        this.TipoHabitat = null;
+    }
+            
+    @Override
+    public String emitirSonido() {
+        return "Chirrido";
+    }
+
+    @Override
+    public String obtenerDieta() {
+       return "Pescado";
+    }
 }
