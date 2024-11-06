@@ -2,10 +2,14 @@ package logicaNegocio;
 
 public class Leon extends Animal{
 
-    private final String TipoHabitat;
+    private final TipoHabitat Habitat;
 
     public Leon() {
-        this.TipoHabitat = null;
+        this.Habitat = TipoHabitat.TERRESTRE;
+    }
+
+    public TipoHabitat getHabitat() {
+        return Habitat;
     }
             
     @Override
