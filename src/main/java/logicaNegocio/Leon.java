@@ -8,6 +8,7 @@ public class Leon extends Animal{
         this.Habitat = TipoHabitat.TERRESTRE;
     }
 
+    @Override
     public TipoHabitat getHabitat() {
         return Habitat;
     }
