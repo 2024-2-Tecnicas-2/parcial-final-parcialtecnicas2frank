@@ -1,15 +1,33 @@
 package logicaNegocio;
 
 public class Perro extends Animal implements Domestico{
+    private final TipoHabitat Habitat;
+
+    public Perro() {
+        this.Habitat = TipoHabitat.TERRESTRE;
+    }
 
     @Override
+    public TipoHabitat getHabitat() {
+        return Habitat;
+    }
+    
+    
+    @Override
     public String emitirSonido() {
-        return null;
+        return "Ladrido";
     }
 
     @Override
     public String obtenerDieta() {
-        return null;
+        return "Omnivoro";
     }
-    // TODO: Aquí va tu código
+
+    @Override
+    public String interactuarConHumano() {
+       return "El perro mueve la cola  y ladra de felicidad";
+    }
+
+  
+    
 }
