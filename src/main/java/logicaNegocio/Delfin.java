@@ -8,6 +8,7 @@ public class Delfin extends Animal{
         this.Habitat = TipoHabitat.ACUATICO;
     }
 
+    @Override
     public TipoHabitat getHabitat() {
         return Habitat;
     }
