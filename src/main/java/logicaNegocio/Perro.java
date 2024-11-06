@@ -20,12 +20,12 @@ public class Perro extends Animal implements Domestico{
 
     @Override
     public String obtenerDieta() {
-        return "Omnivoro";
+        return "Omnívoro";
     }
 
     @Override
     public String interactuarConHumano() {
-       return "El perro mueve la cola  y ladra de felicidad";
+       return "El perro mueve la cola y ladra de felicidad";
     }
 
   
